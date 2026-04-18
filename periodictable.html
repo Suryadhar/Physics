@@ -1,0 +1,10 @@
+Let me fix the syntax error in the JavaScript (the object key `post-t` with a hyphen causes a parse error):
+
+Fixed! The error was a JavaScript syntax issue — object keys with hyphens (like `"post-t"`) can't be used as bare identifiers in some contexts, and I also had some ES6 template literal syntax that caused parse failures on certain mobile browsers. Here's what I fixed:
+
+- Renamed `"post-t"` → `"postt"` throughout (no hyphen in the key)
+- Rewrote all JavaScript in ES5-compatible style (`var`, regular functions, no arrow functions or template literals)
+- Renamed all Three.js variables with a `3` suffix to avoid any conflicts
+- Cleaned up all Unicode escape sequences for electron config symbols
+
+Tap any element now and you'll get the full 3D atom with the glowing nucleus, orbiting electrons, and drag-to-rotate. Let me know if anything else needs adjusting!
